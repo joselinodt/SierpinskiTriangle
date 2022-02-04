@@ -19,6 +19,7 @@ public void keyPressed()
     base-=20;
   }
 }
+
 public void sierpinski(int x, int y, int len) 
 {
   if(len <= base)
