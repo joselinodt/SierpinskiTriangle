@@ -7,9 +7,13 @@ public void draw()
 {
   background(0);
   sierpinski(50,410,400);
+  fill(255);
+  text("Base: " + base, 250, 470);
 }
 public void keyPressed()
 {
+  if(base >= 0)
+  {
   if(keyCode == UP)
   {
     base+=20;
@@ -17,6 +21,7 @@ public void keyPressed()
   else if(keyCode == DOWN)
   {
     base-=20;
+  }
   }
 }
 
